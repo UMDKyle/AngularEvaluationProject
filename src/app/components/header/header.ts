@@ -14,4 +14,11 @@ export class Header {
       this.search.emit(input.value.trim());
     }
   }
+
+  onSubmit(event: Event, input: HTMLInputElement): void {
+    event.preventDefault();
+    if (input.value.trim()) {
+      this.search.emit(input.value.trim());
+    }
+  }
 }

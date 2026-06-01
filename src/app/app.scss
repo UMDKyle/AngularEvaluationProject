@@ -16,13 +16,15 @@ main {
     text-align: center;
     font-size: 20px;
     color: #333;
-    margin-bottom: 12px;
   }
 
   hr {
     border: none;
     border-top: 1px solid #007a78;
+    margin-top: 10px;
     margin-bottom: 8px;
+    margin-left: 160px;
+    margin-right: 160px;
   }
 
   .heading-area {
@@ -30,14 +32,13 @@ main {
     justify-content: center;
     align-items: center;
     min-height: 36px;
-    margin-bottom: 12px;
   }
 
   .spinner {
     width: 24px;
     height: 24px;
-    border: 3px solid #d0eeee;
-    border-top-color: #007a78;
+    border: 5px solid #dadada;
+    border-top-color: #3d3e3e;
     border-radius: 50%;
     animation: spin 0.7s linear infinite;
   }

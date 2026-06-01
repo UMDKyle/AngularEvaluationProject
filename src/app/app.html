@@ -5,7 +5,7 @@
     @if (isLoading()) {
       <div class="spinner"></div>
     } @else if (hasSearched()) {
-      <h2>{{ resultCount() }} results for '{{ artistName() }}'</h2>
+      <h2>{{ resultCount() }} results for "{{ artistName() }}"</h2>
     } @else {
       <h2>Search Albums by ArtistName:</h2>
     }

@@ -1,8 +1,12 @@
 <div class="album-grid">
   @for (album of albums(); track album.collectionId) {
     <div class="album-card">
-      <img [src]="album.artworkUrl100" [alt]="album.collectionName" />
-      <p class="album-name">{{ album.collectionName }}</p>
+      <div class="img-wrapper">
+        <img [src]="album.artworkUrl100" [alt]="album.collectionName" />
+      </div>
+      <div class="album-info">
+        <p class="album-name">{{ album.collectionName }}</p>
+      </div>
     </div>
   }
 </div>
