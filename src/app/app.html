@@ -1,0 +1,15 @@
+<app-header (search)="onSearch($event)" />
+
+<main>
+  <div class="heading-area">
+    @if (isLoading()) {
+      <div class="spinner"></div>
+    } @else if (hasSearched()) {
+      <h2>{{ resultCount() }} results for '{{ artistName() }}'</h2>
+    } @else {
+      <h2>Search Albums by ArtistName:</h2>
+    }
+  </div>
+  <hr />
+  <app-album-list [albums]="albums()" />
+</main>

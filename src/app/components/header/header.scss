@@ -1,0 +1,38 @@
+header {
+  background-color: #007a78;
+  padding: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .search-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 480px;
+
+    input {
+      width: 100%;
+      padding: 10px 40px 10px 20px;
+      border: none;
+      border-radius: 20px;
+      outline: none;
+      font-size: 16px;
+      color: #333;
+      background-color: #fff;
+      box-sizing: border-box;
+
+      &::placeholder {
+        color: #aaa;
+      }
+    }
+
+    .search-icon {
+      position: absolute;
+      right: 14px;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 16px;
+      pointer-events: none;
+    }
+  }
+}

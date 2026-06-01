@@ -1,0 +1,11 @@
+<header>
+  <div class="search-wrapper">
+    <input
+      type="text"
+      placeholder="Search..."
+      (keydown)="onKeyDown($event, searchInput)"
+      #searchInput
+    />
+    <span class="search-icon">&#128269;</span>
+  </div>
+</header>
